@@ -1,0 +1,59 @@
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/david/.m2/repository/org/openjfx/javafx-controls/21-ea+5/javafx-controls-21-ea+5.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-graphics/21-ea+5/javafx-graphics-21-ea+5.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-base/21-ea+5/javafx-base-21-ea+5.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-fxml/21-ea+5/javafx-fxml-21-ea+5.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-media/21-ea+5/javafx-media-21-ea+5.jar;C:/Users/david/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar'
+--module-path
+'C:/Users/david/.m2/repository/org/openjfx/javafx-graphics/21-ea+5/javafx-graphics-21-ea+5-win.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-fxml/21-ea+5/javafx-fxml-21-ea+5-win.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-controls/21-ea+5/javafx-controls-21-ea+5-win.jar;C:/Users/david/.m2/repository/org/openjfx/javafx-media/21-ea+5/javafx-media-21-ea+5-win.jar;C:/Users/david/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar;C:/Users/david/.m2/repository/com/neovisionaries/nv-websocket-client/2.14/nv-websocket-client-2.14.jar;C:/Users/david/OneDrive/Desktop/tetrecs/target/classes;C:/Users/david/.m2/repository/org/openjfx/javafx-base/21-ea+5/javafx-base-21-ea+5-win.jar'
+--patch-module
+uk.ac.soton.comp1206='C:/Users/david/OneDrive/Desktop/tetrecs/src/main/java'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+--module-source-path
+'C:/Users/david/OneDrive/Desktop/tetrecs/target/site/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/david/OneDrive/Desktop/tetrecs/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'tetrecs 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'tetrecs 1.0-SNAPSHOT API'
+uk.ac.soton.comp1206
+uk.ac.soton.comp1206.component
+uk.ac.soton.comp1206.event
+uk.ac.soton.comp1206.game
+uk.ac.soton.comp1206.network
+uk.ac.soton.comp1206.scene
+uk.ac.soton.comp1206.ui
+'C:/Users/david/OneDrive/Desktop/tetrecs/src/main/java/module-info.java'
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\allclasses-index.html = 1710209304316
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\allpackages-index.html = 1710209304322
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\constant-values.html = 1710209303871
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\copy.svg = 1710209304459
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\element-list = 1710209303691
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\help-doc.html = 1710209304435
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\index-all.html = 1710209304416
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\index.html = 1710209304426
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\link.svg = 1710209304461
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\member-search-index.js = 1710209304331
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\module-search-index.js = 1710209304325
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\overview-tree.html = 1710209304256
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\package-search-index.js = 1710209304326
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\script.js = 1710209304457
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\search-page.js = 1710209304471
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\search.html = 1710209304421
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\search.js = 1710209304467
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\stylesheet.css = 1710209304453
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\tag-search-index.js = 1710209304335
+C:\Users\david\OneDrive\Desktop\tetrecs\target\site\apidocs\type-search-index.js = 1710209304328
