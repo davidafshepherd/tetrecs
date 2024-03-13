@@ -13,11 +13,9 @@ import uk.ac.soton.comp1206.network.Communicator;
 import uk.ac.soton.comp1206.scene.*;
 
 /**
- * The GameWindow is the single window for the game where everything takes place. To move between screens in the game,
- * we simply change the scene.
- *
- * The GameWindow has methods to launch each of the different parts of the game by switching scenes. You can add more
- * methods here to add more screens to the game.
+ * The GameWindow is the single window for the game where everything takes place.
+ * To move between screens in the game, we simply change the scene.
+ * The GameWindow has methods to launch each of the different parts of the game by switching scenes.
  */
 public class GameWindow {
 
@@ -34,7 +32,7 @@ public class GameWindow {
     final Communicator communicator;
 
     /**
-     * Create a new GameWindow attached to the given stage with the specified width and height
+     * Creates a new GameWindow attached to the given stage with the specified width and height
      * @param stage stage
      * @param width width
      * @param height height
@@ -62,7 +60,7 @@ public class GameWindow {
     }
 
     /**
-     * Setup the font and any other resources we need
+     * Sets up the font and any other resources we need
      */
     private void setupResources() {
         logger.info("Loading resources");
@@ -74,29 +72,29 @@ public class GameWindow {
     }
 
     /**
-     * Display the main menu
+     * Displays the main menu
      */
     public void startMenu() {
         loadScene(new MenuScene(this));
     }
 
     /**
-     * Display the single player challenge
+     * Displays the single player challenge
      */
     public void startChallenge() { loadScene(new ChallengeScene(this)); }
 
     /**
-     * Display the instructions
+     * Displays the instructions
      */
     public void startInstructions() { loadScene(new InstructionsScene(this)); }
 
     /**
-     * Display the Multiplayer Lobby
+     * Displays the Multiplayer Lobby
      */
     public void startMultiplayer() { loadScene(new LobbyScene(this)); }
 
     /**
-     * Setup the default settings for the stage itself (the window), such as the title and minimum width and height.
+     * Sets up the default settings for the stage itself (the window), such as the title and minimum width and height.
      */
     public void setupStage() {
         stage.setTitle("TetrECS");
@@ -106,7 +104,7 @@ public class GameWindow {
     }
 
     /**
-     * Load a given scene which extends BaseScene and switch over.
+     * Loads a given scene which extends BaseScene and switch over.
      * @param newScene new scene to load
      */
     public void loadScene(BaseScene newScene) {
@@ -124,7 +122,7 @@ public class GameWindow {
     }
 
     /**
-     * Setup the default scene (an empty black scene) when no scene is loaded
+     * Sets up the default scene (an empty black scene) when no scene is loaded
      */
     public void setupDefaultScene() {
         this.scene = new Scene(new Pane(),width,height, Color.BLACK);
@@ -132,7 +130,7 @@ public class GameWindow {
     }
 
     /**
-     * When switching scenes, perform any cleanup needed, such as removing previous listeners
+     * When switching scenes, performs any cleanup needed, such as removing previous listeners
      */
     public void cleanup() {
         logger.info("Clearing up previous scene");
@@ -140,7 +138,7 @@ public class GameWindow {
     }
 
     /**
-     * Get the current scene being displayed
+     * Gets the current scene being displayed
      * @return scene
      */
     public Scene getScene() {
@@ -148,7 +146,7 @@ public class GameWindow {
     }
 
     /**
-     * Get the width of the Game Window
+     * Gets the width of the Game Window
      * @return width
      */
     public int getWidth() {
@@ -156,7 +154,7 @@ public class GameWindow {
     }
 
     /**
-     * Get the height of the Game Window
+     * Gets the height of the Game Window
      * @return height
      */
     public int getHeight() {
@@ -164,7 +162,7 @@ public class GameWindow {
     }
 
     /**
-     * Get the communicator
+     * Gets the communicator
      * @return communicator
      */
     public Communicator getCommunicator() {

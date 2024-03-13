@@ -40,7 +40,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * The Scores scene. Provides a display for the high scores achieved by players.
+ * The Scores scene.
+ * Provides a display for the high scores achieved by players.
  */
 public class ScoresScene extends BaseScene {
 
@@ -137,7 +138,7 @@ public class ScoresScene extends BaseScene {
     private final Communicator communicator = gameWindow.getCommunicator();
 
     /**
-     * Create a new Scores scene
+     * Creates a new Scores scene
      *
      * @param gameWindow the Game Window this will be displayed in
      */
@@ -147,7 +148,7 @@ public class ScoresScene extends BaseScene {
     }
 
     /**
-     * Initialise the scores and sets up anything that needs to be done at the start
+     * Initialises the scores and sets up anything that needs to be done at the start
      */
     @Override
     public void initialise() {
@@ -229,7 +230,7 @@ public class ScoresScene extends BaseScene {
     public void setOnNameRequested(NameRequestedListener listener) { this.nameRequestedListener = listener;}
 
     /**
-     * Check if prompting the player is needed and either displays a prompt or the scoreboard depending on so
+     * Checks if prompting the player is needed and either displays a prompt or the scoreboard depending on so
      * @param onlineScores the online high scores received from the server
      */
     public void checkToPrompt(String onlineScores) {

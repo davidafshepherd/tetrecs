@@ -19,7 +19,8 @@ import uk.ac.soton.comp1206.ui.GamePane;
 import uk.ac.soton.comp1206.ui.GameWindow;
 
 /**
- * The main menu of the game. Provides a gateway to the rest of the game.
+ * The main menu of the game.
+ * Provides a gateway to the rest of the game.
  */
 public class MenuScene extends BaseScene {
 
@@ -31,7 +32,7 @@ public class MenuScene extends BaseScene {
     private ImageView titleImage;
 
     /**
-     * Create a new menu scene
+     * Creates a new menu scene
      * @param gameWindow the Game Window this will be displayed in
      */
     public MenuScene(GameWindow gameWindow) {
@@ -105,7 +106,7 @@ public class MenuScene extends BaseScene {
     }
 
     /**
-     * Initialise the menu and sets up anything that needs to be done at the start
+     * Initialises the menu and sets up anything that needs to be done at the start
      */
     @Override
     public void initialise() {
@@ -142,7 +143,7 @@ public class MenuScene extends BaseScene {
     }
 
     /**
-     * Handle when the Start Game button is pressed
+     * Handles when the Start Game button is pressed
      * @param event event
      */
     private void startGame(MouseEvent event) {

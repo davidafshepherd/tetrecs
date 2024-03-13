@@ -17,8 +17,8 @@ import java.util.Comparator;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * The Multiplayer Game class handles the main logic, state and properties of the multiplayer version of the TetrECS game. Methods to manipulate the game state
- * and to handle actions made by the player should take place inside this class.
+ * The Multiplayer Game class handles the main logic, state and properties of the multiplayer version of the TetrECS game.
+ * Methods to manipulate the game state and to handle actions made by the player should take place inside this class.
  */
 public class MultiplayerGame extends Game {
 
@@ -109,7 +109,8 @@ public class MultiplayerGame extends Game {
     private final SimpleStringProperty gameChat = new SimpleStringProperty("In-Game Chat Press T to send a chat message");
 
     /**
-     * Create a new game with the specified rows and columns. Creates a corresponding grid model.
+     * Creates a new game with the specified rows and columns
+     * Creates a corresponding grid model
      * @param cols number of columns
      * @param rows number of rows
      */
@@ -120,7 +121,7 @@ public class MultiplayerGame extends Game {
     }
 
     /**
-     * Initialise a new multiplayer game and set up anything that needs to be done at the start
+     * Initialises a new multiplayer game and sets up anything that needs to be done at the start
      */
     @Override
     public void initialiseGame() {

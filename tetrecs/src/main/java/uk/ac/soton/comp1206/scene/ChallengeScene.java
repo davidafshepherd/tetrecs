@@ -31,7 +31,8 @@ import java.util.Scanner;
 import java.util.Set;
 
 /**
- * The Single Player challenge scene. Holds the UI for the single player challenge mode in the game.
+ * The Single Player challenge scene.
+ * Holds the UI for the single player challenge mode in the game.
  */
 public class ChallengeScene extends BaseScene {
 
@@ -126,7 +127,7 @@ public class ChallengeScene extends BaseScene {
     private Transition timerBarAnimation;
 
     /**
-     * Create a new Single Player challenge scene
+     * Creates a new Single Player challenge scene
      * @param gameWindow the Game Window
      */
     public ChallengeScene(GameWindow gameWindow) {
@@ -135,7 +136,7 @@ public class ChallengeScene extends BaseScene {
     }
 
     /**
-     * Setup the game object and model
+     * Sets up the game object and model
      */
     public void setupGame() {
         logger.info("Starting a new challenge");
@@ -145,7 +146,7 @@ public class ChallengeScene extends BaseScene {
     }
 
     /**
-     * Initialise the scene, start the game and sets up anything that needs to be done at the start
+     * Initialises the scene, starts the game and sets up anything that needs to be done at the start
      */
     @Override
     public void initialise() {
@@ -169,7 +170,7 @@ public class ChallengeScene extends BaseScene {
     }
 
     /**
-     * Build the Challenge window
+     * Builds the Challenge window
      */
     @Override
     public void build() {

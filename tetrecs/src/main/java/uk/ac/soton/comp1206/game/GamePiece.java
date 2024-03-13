@@ -1,10 +1,8 @@
 package uk.ac.soton.comp1206.game;
 
 /**
- * Instances of GamePiece Represents the model of a specific Game Piece with it's block makeup.
- *
- * The GamePiece class also contains a factory for producing a GamePiece of a particular shape, as specified by it's
- * number.
+ * Instances of GamePiece Represents the model of a specific Game Piece with its block makeup.
+ * The GamePiece class also contains a factory for producing a GamePiece of a particular shape, as specified by its number.
  */
 public class GamePiece {
 
@@ -29,7 +27,7 @@ public class GamePiece {
     private final String name;
 
     /**
-     * Create a new GamePiece of the specified piece number
+     * Creates a new GamePiece of the specified piece number
      * @param piece piece number
      * @return the created GamePiece
      */
@@ -131,7 +129,7 @@ public class GamePiece {
     }
 
     /**
-     * Create a new GamePiece of the specified piece number and rotation
+     * Creates a new GamePiece of the specified piece number and rotation
      * @param piece piece number
      * @param rotation number of times to rotate
      * @return the created GamePiece
@@ -144,8 +142,7 @@ public class GamePiece {
     }
 
     /**
-     * Create a new GamePiece with the given name, block makeup and value. Should not be called directly, only via the
-     * factory.
+     * Creates a new GamePiece with the given name, block makeup and value
      * @param name name of the piece
      * @param blocks block makeup of the piece
      * @param value the value of this piece
@@ -165,7 +162,7 @@ public class GamePiece {
     }
 
     /**
-     * Get the value of this piece
+     * Gets the value of this piece
      * @return piece value
      */
     public int getValue() {
@@ -173,7 +170,7 @@ public class GamePiece {
     }
 
     /**
-     * Get the block makeup of this piece
+     * Gets the block makeup of this piece
      * @return 2D grid of the blocks representing the piece shape
      */
     public int[][] getBlocks() {
@@ -181,7 +178,7 @@ public class GamePiece {
     }
 
     /**
-     * Rotate this piece the given number of rotations
+     * Rotates this piece the given number of rotations
      * @param rotations number of rotations
      */
     public void rotate(int rotations) {
@@ -191,7 +188,7 @@ public class GamePiece {
     }
 
     /**
-     * Rotate this piece exactly once by rotating it's 3x3 grid
+     * Rotates this piece exactly once by rotating its 3x3 grid
      */
     public void rotate() {
         int[][] rotated = new int[blocks.length][blocks[0].length];
@@ -211,7 +208,7 @@ public class GamePiece {
     }
 
     /**
-     * Return the string representation of this piece
+     * Returns the string representation of this piece
      * @return the name of this piece
      */
     public String toString() {

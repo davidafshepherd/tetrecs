@@ -6,7 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- *The Multimedia Class. Plays audio and looped music.
+ *The Multimedia Class.
+ * Plays audio and looped music.
  */
 public class Multimedia {
 
@@ -23,7 +24,7 @@ public class Multimedia {
     private static MediaPlayer musicPlayer;
 
     /**
-     *Plays an audio
+     * Plays an audio
      * @param file name of audio file to play
      */
     public static void playAudio(String file) {
@@ -43,7 +44,7 @@ public class Multimedia {
     }
 
     /**
-     *Plays a music on a loop
+     * Plays a music on a loop
      * @param file name of music file to be played on a loop
      */
     public static void playMusic(String file) {

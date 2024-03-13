@@ -1,6 +1,5 @@
 package uk.ac.soton.comp1206.event;
 
-import uk.ac.soton.comp1206.game.Game;
 import uk.ac.soton.comp1206.game.GamePiece;
 
 /**
@@ -13,5 +12,5 @@ public interface NextPieceListener {
      * @param currentPiece the current game piece
      * @param followingPiece the next game piece
      */
-    public void nextPiece(GamePiece currentPiece, GamePiece followingPiece);
+    void nextPiece(GamePiece currentPiece, GamePiece followingPiece);
 }

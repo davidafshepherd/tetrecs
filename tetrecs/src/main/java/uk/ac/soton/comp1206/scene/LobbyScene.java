@@ -26,7 +26,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * The Lobby scene. Provides a display for the multiplayer game lobbies.
+ * The Lobby scene.
+ * Provides a display for the multiplayer game lobbies.
  */
 public class LobbyScene extends BaseScene {
 
@@ -119,7 +120,7 @@ public class LobbyScene extends BaseScene {
 
 
     /**
-     * Create a new lobby scene
+     * Creates a new lobby scene
      * @param gameWindow the Game Window this will be displayed in
      */
     public LobbyScene(GameWindow gameWindow) {
@@ -128,7 +129,7 @@ public class LobbyScene extends BaseScene {
     }
 
     /**
-     * Initialise the lobby and sets up anything that needs to be done at the start
+     * Initialises the lobby and sets up anything that needs to be done at the start
      */
     @Override
     public void initialise() {

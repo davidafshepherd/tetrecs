@@ -13,5 +13,5 @@ public interface LineClearedListener {
      * Handles a line cleared event
      * @param gameBlockCoordinates coordinates of game blocks in that line
      */
-    public void lineCleared(Set<GameBlockCoordinate> gameBlockCoordinates);
+    void lineCleared(Set<GameBlockCoordinate> gameBlockCoordinates);
 }

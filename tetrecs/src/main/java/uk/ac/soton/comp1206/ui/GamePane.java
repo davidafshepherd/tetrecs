@@ -9,15 +9,10 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * The Game Pane is a special pane which will scale anything inside it to the screen and maintain the aspect ratio.
- *
  * Drawing will be scaled appropriately.
- *
  * This takes the worry about the layout out and will allow the game to scale to any resolution easily.
- *
- * It uses the width and height given which should match the main window size. This will be the base drawing resolution,
- * but will be scaled up or down as the window is resized.
- *
- * You should not need to modify this class
+ * It uses the width and height given which should match the main window size.
+ * This will be the base drawing resolution, but will be scaled up or down as the window is resized.
  */
 public class GamePane extends StackPane {
 
@@ -29,7 +24,7 @@ public class GamePane extends StackPane {
     private final boolean autoScale = true;
 
     /**
-     * Create a new scalable GamePane with the given drawing width and height.
+     * Creates a new scalable GamePane with the given drawing width and height.
      * @param width width
      * @param height height
      */
@@ -43,7 +38,7 @@ public class GamePane extends StackPane {
     }
 
     /**
-     * Update the scalar being used by this draw pane
+     * Updates the scalar being used by this draw pane
      * @param scalar scalar
      */
     protected void setScalar(double scalar) {
@@ -51,8 +46,8 @@ public class GamePane extends StackPane {
     }
 
     /**
-     * Use a Graphics Transformation to scale everything inside this pane. Padding is added to the edges to maintain
-     * the correct aspect ratio and keep the display centred.
+     * Uses a Graphics Transformation to scale everything inside this pane.
+     * Padding is added to the edges to maintain the correct aspect ratio and keep the display centred.
      */
     @Override
     public void layoutChildren() {

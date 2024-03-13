@@ -20,8 +20,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * The Game class handles the main logic, state and properties of the TetrECS game. Methods to manipulate the game state
- * and to handle actions made by the player should take place inside this class.
+ * The Game class handles the main logic, state and properties of the TetrECS game.
  */
 public class Game {
 
@@ -99,7 +98,8 @@ public class Game {
 
 
     /**
-     * Create a new game with the specified rows and columns. Creates a corresponding grid model.
+     * Creates a new game with the specified rows and columns
+     * Creates a corresponding grid model
      * @param cols number of columns
      * @param rows number of rows
      */
@@ -112,7 +112,7 @@ public class Game {
     }
 
     /**
-     * Get the grid model inside this game representing the game state of the board
+     * Gets the grid model inside this game representing the game state of the board
      * @return game grid model
      */
     public Grid getGrid() {
@@ -120,7 +120,7 @@ public class Game {
     }
 
     /**
-     * Get the number of columns in this game
+     * Gets the number of columns in this game
      * @return number of columns
      */
     public int getCols() {
@@ -128,7 +128,7 @@ public class Game {
     }
 
     /**
-     * Get the number of rows in this game
+     * Gets the number of rows in this game
      * @return number of rows
      */
     public int getRows() {
@@ -136,7 +136,7 @@ public class Game {
     }
 
     /**
-     * Start the game
+     * Starts the game
      */
     public void start() {
         logger.info("Starting game");
@@ -144,7 +144,7 @@ public class Game {
     }
 
     /**
-     * Initialise a new game and set up anything that needs to be done at the start
+     * Initialises a new game and set up anything that needs to be done at the start
      */
     public void initialiseGame() {
         logger.info("Initialising game");

@@ -6,15 +6,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * The Grid is a model which holds the state of a game board. It is made up of a set of Integer values arranged in a 2D
- * arrow, with rows and columns.
- *
- * Each value inside the Grid is an IntegerProperty can be bound to enable modification and display of the contents of
- * the grid.
- *
+ * The Grid is a model which holds the state of a game board. It is made up of a set of Integer values arranged in a 2D arrow, with rows and columns.
+ * Each value inside the Grid is an IntegerProperty can be bound to enable modification and display of the contents of the grid.
  * The Grid contains functions related to modifying the model, for example, placing a piece inside the grid.
- *
- * The Grid should be linked to a GameBoard for it's display.
  */
 public class Grid {
 
@@ -36,7 +30,7 @@ public class Grid {
     private final SimpleIntegerProperty[][] grid;
 
     /**
-     * Create a new Grid with the specified number of columns and rows and initialise them
+     * Creates a new Grid with the specified number of columns and rows and initialise them
      * @param cols number of columns
      * @param rows number of rows
      */
@@ -56,7 +50,7 @@ public class Grid {
     }
 
     /**
-     * Get the Integer property contained inside the grid at a given row and column index. Can be used for binding.
+     * Gets the Integer property contained inside the grid at a given row and column index
      * @param x column
      * @param y row
      * @return the IntegerProperty at the given x and y in this grid
@@ -66,7 +60,7 @@ public class Grid {
     }
 
     /**
-     * Update the value at the given x and y index within the grid
+     * Updates the value at the given x and y index within the grid
      * @param x column
      * @param y row
      * @param value the new value
@@ -76,7 +70,7 @@ public class Grid {
     }
 
     /**
-     * Get the value represented at the given x and y index within the grid
+     * Gets the value represented at the given x and y index within the grid
      * @param x column
      * @param y row
      * @return the value
@@ -92,7 +86,7 @@ public class Grid {
     }
 
     /**
-     * Get the number of columns in this game
+     * Gets the number of columns in this game
      * @return number of columns
      */
     public int getCols() {
@@ -100,7 +94,7 @@ public class Grid {
     }
 
     /**
-     * Get the number of rows in this game
+     * Gets the number of rows in this game
      * @return number of rows
      */
     public int getRows() {

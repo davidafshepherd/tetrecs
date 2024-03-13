@@ -11,5 +11,5 @@ public interface BlockHoveredListener {
      * Handles a block hovered event
      * @param block the block that was hovered over
      */
-    public void blockHovered(GameBlock block);
+    void blockHovered(GameBlock block);
 }

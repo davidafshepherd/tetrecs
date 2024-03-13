@@ -11,5 +11,5 @@ public interface MultiplayerScoresListener {
     /**
      * Handles a multiplayer scores event
      */
-    public ListProperty<Pair<String, Integer>> multiplayerScores();
+    ListProperty<Pair<String, Integer>> multiplayerScores();
 }

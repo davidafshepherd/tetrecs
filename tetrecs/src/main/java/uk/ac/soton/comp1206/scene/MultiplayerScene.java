@@ -18,7 +18,8 @@ import uk.ac.soton.comp1206.game.MultiplayerGame;
 import uk.ac.soton.comp1206.ui.GameWindow;
 
 /**
- * The Multi Player challenge scene. Holds the UI for the multi player challenge mode in the game.
+ * The Multi Player challenge scene.
+ * Holds the UI for the multi player challenge mode in the game.
  */
 public class MultiplayerScene extends ChallengeScene {
 
@@ -51,7 +52,7 @@ public class MultiplayerScene extends ChallengeScene {
 
 
     /**
-     * Create a new Multi Player challenge scene
+     * Creates a new Multi Player challenge scene
      * @param gameWindow the Game Window
      */
     public MultiplayerScene(GameWindow gameWindow) {
@@ -59,7 +60,7 @@ public class MultiplayerScene extends ChallengeScene {
     }
 
     /**
-     * Setup the game object and model
+     * Sets up the game object and model
      */
     @Override
     public void setupGame() {
@@ -70,7 +71,7 @@ public class MultiplayerScene extends ChallengeScene {
     }
 
     /**
-     * Build the Challenge window
+     * Builds the Challenge window
      */
     @Override
     public void build() {

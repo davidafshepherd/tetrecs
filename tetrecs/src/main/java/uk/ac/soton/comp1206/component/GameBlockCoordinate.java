@@ -3,9 +3,8 @@ package uk.ac.soton.comp1206.component;
 import javafx.beans.NamedArg;
 
 /**
- * Represents a row and column representation of a block in the grid. Holds the x (column) and y (row).
- *
- * Useful for use in a set or list or other form of collection.
+ * Represents a row and column representation of a block in the grid.
+ * Holds the x (column) and y (row).
  */
 public class GameBlockCoordinate {
 
@@ -20,13 +19,13 @@ public class GameBlockCoordinate {
     private final int y;
 
     /**
-     * A hash is computed to enable comparisons between this and other GameBlockCoordinates.
+     * A hash is computed to enable comparisons between this and other GameBlockCoordinates
      */
     private int hash = 0;
 
 
     /**
-     * Create a new GameBlockCoordinate which stores a row and column reference to a block
+     * Creates a new GameBlockCoordinate which stores a row and column reference to a block
      * @param x column
      * @param y row
      */
@@ -36,7 +35,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Return the column (x)
+     * Returns the column (x)
      * @return column number
      */
     public int getX() {
@@ -44,7 +43,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Return the row (y)
+     * Returns the row (y)
      * @return the row number
      */
     public int getY() {
@@ -52,7 +51,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Add a row and column reference to this one and return a new GameBlockCoordinate
+     * Adds a row and column reference to this one and returns a new GameBlockCoordinate
      * @param x additional columns
      * @param y additional rows
      * @return a new GameBlockCoordinate with the result of the addition
@@ -64,7 +63,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Add another GameBlockCoordinate to this one, returning a new GameBlockCoordinate
+     * Adds another GameBlockCoordinate to this one, returning a new GameBlockCoordinate
      * @param point point to add
      * @return a new GameBlockCoordinate with the result of the addition
      */
@@ -72,7 +71,7 @@ public class GameBlockCoordinate {
         return add(point.getX(), point.getY());
     }
 
-    /** Subtract a row and column reference to this one and return a new GameBlockCoordinate
+    /** Subtracts a row and column reference to this one and returns a new GameBlockCoordinate
      * @param x columns to remove
      * @param y rows to remove
      * @return a new GameBlockCoordinate with the result of the subtraction
@@ -84,7 +83,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Subtract another GameBlockCoordinate to this one, returning a new GameBlockCoordinate
+     * Subtracts another GameBlockCoordinate to this one, returning a new GameBlockCoordinate
      * @param point point to subtract
      * @return a new GameBlockCoordinate with the result of the subtraction
      */
@@ -93,7 +92,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Compare this GameBlockCoordinate to another GameBlockCoordinate
+     * Compares this GameBlockCoordinate to another GameBlockCoordinate
      * @param obj other object to compare to
      * @return true if equal, otherwise false
      */
@@ -106,7 +105,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Calculate a hash code of this GameBlockCoordinate, used for comparisons
+     * Calculates a hash code of this GameBlockCoordinate, used for comparisons
      * @return hash code
      */
     @Override public int hashCode() {
@@ -120,7 +119,7 @@ public class GameBlockCoordinate {
     }
 
     /**
-     * Return a string representation of this GameBlockCoordinate
+     * Returns a string representation of this GameBlockCoordinate
      * @return string representation
      */
     @Override public String toString() {

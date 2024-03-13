@@ -8,7 +8,7 @@ public interface ScoreRequestedListener {
     /**
      * Handles a score requested event
      */
-    public int scoreRequested();
+    int scoreRequested();
 }
 
 

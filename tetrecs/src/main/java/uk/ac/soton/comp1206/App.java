@@ -26,7 +26,7 @@ public class App extends Application {
     private Stage stage;
 
     /**
-     * Start the game
+     * Starts the game
      * @param args commandline arguments
      */
     public static void main(String[] args) {
@@ -48,7 +48,7 @@ public class App extends Application {
     }
 
     /**
-     * Create the GameWindow with the specified width and height
+     * Creates the GameWindow with the specified width and height
      */
     public void openGame() {
         logger.info("Opening game window");
@@ -61,7 +61,7 @@ public class App extends Application {
     }
 
     /**
-     * Shutdown the game
+     * Shuts down the game
      */
     public void shutdown() {
         logger.info("Shutting down");
@@ -69,7 +69,7 @@ public class App extends Application {
     }
 
     /**
-     * Get the singleton App instance
+     * Gets the singleton App instance
      * @return the app
      */
     public static App getInstance() {

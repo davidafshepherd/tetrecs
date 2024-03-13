@@ -112,7 +112,6 @@ public class GameBoardsList extends VBox {
 
     /**
      * Gets the game boards list property
-     *
      * @return the game boards list property
      */
     public SimpleListProperty<Pair<String, Grid>> getGameBoardsProperty() {
@@ -121,7 +120,6 @@ public class GameBoardsList extends VBox {
 
     /**
      * Gets the player name property
-     *
      * @return the playerName property
      */
     public SimpleStringProperty getPlayerNameProperty() {
@@ -130,7 +128,6 @@ public class GameBoardsList extends VBox {
 
     /**
      * Gets the life statuses property
-     *
      * @return the life statuses property
      */
     public SimpleListProperty<Pair<String, String>> getLifeStatusesProperty() {

@@ -15,12 +15,8 @@ import java.util.Set;
 /**
  * A GameBoard is a visual component to represent the visual GameBoard.
  * It extends a GridPane to hold a grid of GameBlocks.
- *
- * The GameBoard can hold an internal grid of it's own, for example, for displaying an upcoming block. It also be
- * linked to an external grid, for the main game board.
- *
- * The GameBoard is only a visual representation and should not contain game logic or model logic in it, which should
- * take place in the Grid.
+ * The GameBoard can hold an internal grid of its own, for example, for displaying an upcoming block.
+ * It also is linked to an external grid, for the main game board.
  */
 public class GameBoard extends GridPane {
 
@@ -72,7 +68,7 @@ public class GameBoard extends GridPane {
     private BlockHoveredListener blockHoveredListener;
 
     /**
-     * Create a new GameBoard, based off a given grid, with a visual width and height.
+     * Creates a new GameBoard, based off a given grid, with a visual width and height.
      * @param grid linked grid
      * @param width the visual width
      * @param height the visual height
@@ -89,9 +85,7 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Create a new GameBoard with it's own internal grid, specifying the number of columns and rows, along with the
-     * visual width and height.
-     *
+     * Creates a new GameBoard with its own internal grid, specifying the number of columns and rows, along with the visual width and height.
      * @param cols number of columns for internal grid
      * @param rows number of rows for internal grid
      * @param width the visual width
@@ -109,7 +103,7 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Get a specific block from the GameBoard, specified by it's row and column
+     * Gets a specific block from the GameBoard, specified by its row and column
      * @param x column
      * @param y row
      * @return game block at the given column and row
@@ -119,7 +113,7 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Build the GameBoard by creating a block at every x and y column and row
+     * Builds the GameBoard by creating a block at every x and y column and row
      */
     protected void build() {
         logger.info("Building grid: {} x {}",cols,rows);
@@ -139,7 +133,7 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Create a block at the given x and y position in the GameBoard
+     * Creates a block at the given x and y position in the GameBoard
      * @param x column
      * @param y row
      */
@@ -196,7 +190,8 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Triggered when a block is clicked. Call the attached listener.
+     * Triggered when a block is clicked
+     * Calls the attached listener
      * @param event mouse event
      * @param block block clicked on
      */
@@ -216,7 +211,8 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Triggered when a block is hovered over. Call the attached listener.
+     * Triggered when a block is hovered over
+     * Calls the attached listener
      * @param block block hovered on
      */
     private void blockHovered(GameBlock block) {
@@ -228,7 +224,8 @@ public class GameBoard extends GridPane {
     }
 
     /**
-     * Triggered when a block is stopped being hovered over. Calls GameBlock's paint() method.
+     * Triggered when a block is stopped being hovered over
+     * Calls GameBlock's paint() method
      * @param block block hovered off
      */
     private void blockHoveredOff(GameBlock block) {

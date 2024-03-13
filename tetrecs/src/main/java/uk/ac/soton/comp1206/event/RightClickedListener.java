@@ -11,6 +11,6 @@ public interface RightClickedListener {
      * Handles a right clicked event
      * @param block the block that was right-clicked
      */
-    public void rightClicked(GameBlock block);
+     void rightClicked(GameBlock block);
 }
 

@@ -1,7 +1,6 @@
 package uk.ac.soton.comp1206.network;
 
 import com.neovisionaries.ws.client.*;
-import javafx.scene.control.Alert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import uk.ac.soton.comp1206.event.CommunicationsListener;
@@ -11,23 +10,21 @@ import java.util.List;
 
 /**
  * Uses web sockets to talk to a web socket server and relays communication to attached listeners
- *
- * YOU DO NOT NEED TO WORRY ABOUT THIS CLASS! Leave it be :-)
  */
 public class Communicator {
 
     private static final Logger logger = LogManager.getLogger(Communicator.class);
 
     /**
-     * Attached communication listeners listening to messages on this Communicator. Each will be sent any messages.
+     * Attached communication listeners listening to messages on this Communicator
+     * Each will be sent any messages
      */
     private final List<CommunicationsListener> handlers = new ArrayList<>();
 
     private WebSocket ws = null;
 
     /**
-     * Create a new communicator to the given web socket server
-     *
+     * Creates a new communicator to the given web socket server
      * @param server server to connect to
      */
     public Communicator(String server) {
@@ -75,8 +72,7 @@ public class Communicator {
         } catch (Exception ignored){}
     }
 
-    /** Send a message to the server
-     *
+    /** Sends a message to the server
      * @param message Message to send
      */
     public void send(String message) {
@@ -86,7 +82,7 @@ public class Communicator {
     }
 
     /**
-     * Add a new listener to receive messages from the server
+     * Adds a new listener to receive messages from the server
      * @param listener the listener to add
      */
     public void addListener(CommunicationsListener listener) {
@@ -94,14 +90,14 @@ public class Communicator {
     }
 
     /**
-     * Clear all current listeners
+     * Clears all current listeners
      */
     public void clearListeners() {
         this.handlers.clear();
     }
 
-    /** Receive a message from the server. Relay to any attached listeners
-     *
+    /** Receives a message from the server
+     * Relays to any attached listeners
      * @param websocket the socket
      * @param message the message that was received
      */

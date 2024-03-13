@@ -10,5 +10,5 @@ public interface NameRequestedListener {
     /**
      * Handles a name requested event
      */
-    public SimpleStringProperty nameRequested();
+    SimpleStringProperty nameRequested();
 }

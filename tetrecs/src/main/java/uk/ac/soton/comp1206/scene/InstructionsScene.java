@@ -24,14 +24,15 @@ import uk.ac.soton.comp1206.ui.GameWindow;
 import java.util.ArrayList;
 
 /**
- * The Instructions scene. Provides a display for the instructions on how to play the game.
+ * The Instructions scene.
+ * Provides a display for the instructions on how to play the game.
  */
 public class InstructionsScene extends BaseScene {
 
     private static final Logger logger = LogManager.getLogger(InstructionsScene.class);
 
     /**
-     * Create a new Instructions scene
+     * Creates a new Instructions scene
      * @param gameWindow the Game Window this will be displayed in
      */
     public InstructionsScene(GameWindow gameWindow) {
@@ -40,7 +41,7 @@ public class InstructionsScene extends BaseScene {
     }
 
     /**
-     * Initialise the instructions and sets up anything that needs to be done at the start
+     * Initialises the instructions and sets up anything that needs to be done at the start
      */
     @Override
     public void initialise() {
