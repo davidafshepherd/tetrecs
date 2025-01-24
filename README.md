@@ -1,6 +1,6 @@
 - 'tetrecs' is the project directory.
 - "tetrecs.jar" is the executable .jar file that starts up the game. <br><br>
-- To view the scoreboard and play the multiplayer mode, you need to be connected to the University of Southampton VPN, "GlobalProtect". 
+- To view the scoreboard and play the multiplayer mode, you need to be connected to the University of Southampton's VPN, 'GlobalProtect'. 
 - The link to the VPN is here https://knowledgenow.soton.ac.uk/Articles/KB0011610.
 
 ![image](https://github.com/user-attachments/assets/64a089c6-7466-42ac-8133-5eebe87a4e13)
