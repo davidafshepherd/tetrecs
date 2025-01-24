@@ -1,4 +1,4 @@
-- [src](src) contains the source code.
+- [src](src) contains the source code. 
 - [dist](dist) contains the distributions:
   - Run [tetrecs.jar](dist/tetrecs.jar) to start the game. <br><br>
 - To play the multiplayer mode and view the scoreboard, connect to the University of Southampton's VPN [GlobalProtect](https://knowledgenow.soton.ac.uk/Articles/KB0011610). 
